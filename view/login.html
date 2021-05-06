@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Librería Danny</title>
+</head>
+
+<body>
+<div class="fondo">
+    <div class="login-page">
+        <div class="form">
+          <form action="../process/login.proc.php" method="post" onsubmit="return validar();" class="login-form">
+            <input type="email" placeholder="email" name="email" id="email"/>
+            <input type="password" placeholder="password" name="password" id="password"/>
+            <button>login</button>
+          </form>
+         <br><div id="mensaje"></div></div></br>
+        </div>
+    </div>
+      
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+         });
+    </script>
+</div>
+</body>
+
+</html>
